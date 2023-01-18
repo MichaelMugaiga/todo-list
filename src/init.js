@@ -9,9 +9,14 @@
     function addTask(e) {
       e.preventDefault();
       const task = taskInput.value;
-      tasks.push(task);
-      renderTasks();
-      taskInput.value = "";
+      if(task === ""){
+        alert("Input is empty, please enter a task");
+      }
+      else{
+        tasks.push(task);
+        renderTasks();
+        taskInput.value = "";
+      }
     }
 
     function renderTasks() {
@@ -24,7 +29,7 @@
     }
 
     function editTask(index) {
-      const newTask = prompt("Enter new task:");
+      const newTask = prompt("Edit task name here:");
       tasks[index] = newTask;
       renderTasks();
     }

@@ -17,14 +17,14 @@ h1 {
 #task-input {
   padding: 10px;
   font-size: 16px;
-  border: none;
+  border: groove;
   border-radius: 5px;
   margin-right: 10px;
 }
 
 #add-task-btn {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #4c7faf;
   color: white;
   font-size: 16px;
   border: none;
@@ -33,7 +33,10 @@ h1 {
 
 #task-list {
   list-style: none;
-  padding: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .task {
